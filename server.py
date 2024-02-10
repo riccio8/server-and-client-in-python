@@ -26,4 +26,4 @@ while True:
     time.sleep(60)
     communication_socket.close()
     print(f"La comunicazione con l'utente {address} è terminata")
-    # questo è il server ftp
+    # questo è il server tcp
