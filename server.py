@@ -21,7 +21,7 @@ while True:
     if (communication_socket != None):
         while True:
             message = communication_socket.recv(2048).decode("utf-8")
-            print("Il meessaggio dall'utente è: " + (message).decode)
+            print("Il meessaggio dall'utente è: " + (message).decode("utf-8")
             communication_socket.send(f"Ho ricevuto il tuo messaggio!! Grassie".encode("utf-8"))
     time.sleep(60)
     communication_socket.close()
